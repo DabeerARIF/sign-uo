@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #080809;
+}
+
+.signup-container {
+    width: 725px;
+    margin: 0 auto;
+    padding: 60px 0 50px;
+}
+
+/* Back Button */
+.back {
+    font-size: 48px;
+    color: #65676b;
+    line-height: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+/* Meta */
+.meta-logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.meta-symbol {
+    font-size: 34px;
+    font-weight: bold;
+    color: #0866ff;
+}
+
+/* Heading */
+h1 {
+    font-size: 31px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+
+.intro {
+    font-size: 19px;
+    line-height: 1.35;
+    margin: 0 0 25px;
+    max-width: 700px;
+}
+
+/* Labels */
+h2 {
+    font-size: 23px;
+    margin: 25px 0 10px;
+    font-weight: 600;
+}
+
+.question {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 21px;
+    height: 21px;
+
+    border: 2px solid #555;
+    border-radius: 50%;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Name */
+.name-row {
+    display: flex;
+    gap: 14px;
+}
+
+input,
+select {
+    height: 78px;
+    border: 1px solid #ccd0d5;
+    border-radius: 17px;
+    background: white;
+    font-size: 20px;
+    padding: 0 22px;
+    color: #1c1e21;
+    outline: none;
+}
+
+input::placeholder {
+    color: #667085;
+}
+
+.name-row input {
+    width: 50%;
+}
+
+/* DOB */
+.dob-row {
+    display: flex;
+    gap: 20px;
+}
+
+.dob-row select {
+    flex: 1;
+}
+
+/* Select arrow */
+select {
+    appearance: auto;
+    cursor: pointer;
+}
+
+/* Gender */
+.gender {
+    width: 100%;
+}
+
+/* Full inputs */
+.full-input {
+    width: 100%;
+}
+
+/* Terms */
+.terms {
+    color: #65676b;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 25px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    height: 55px;
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #0866ff;
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0758d8;
+}
+
+/* Login */
+.login {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.login a {
+    color: #0866ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+
+    .signup-container {
+        width: 90%;
+        padding-top: 30px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .intro {
+        font-size: 17px;
+    }
+
+    .name-row,
+    .dob-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .name-row input,
+    .dob-row select {
+        width: 100%;
+    }
+
+    input,
+    select {
+        height: 65px;
+    }
+}
